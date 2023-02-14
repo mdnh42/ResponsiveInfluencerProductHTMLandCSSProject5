@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 /* Common Utilize */
-*{
+* {
     font-family: 'Poppins', sans-serif;
 }
-body{
-    margin: 0 auto; 
+
+body {
+    margin: 0 auto;
 }
-.btn-primary
-{
+
+.btn-primary {
 
     background-color: tomato;
     padding: 15px 30px;
@@ -18,53 +20,104 @@ body{
 }
 
 /* Header Style*/
-.logo-container
-{
+.logo-container {
     margin-left: 30px;
 }
-.logo-title{
+
+.logo-title {
     font-size: 1.5em;
 }
 
-.navigation
-{
+.navigation {
     display: flex;
     justify-content: space-between;
 }
-.menus{
+
+.menus {
     display: flex;
     gap: 20px;
 }
-.menus li{
+
+.menus li {
     list-style: none;
-    
+
 }
-.menus li a{
+
+.menus li a {
     text-decoration: none;
 }
+
 /* Banner Style */
-.banner-container{
+.banner-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.banner-title{
+
+.banner-title {
     font-size: 2.5em;
 }
+
+/* Collection Style */
+.popular-title{
+    text-align: center;
+    font-size: 2em;
+}
+.popular-collection {
+    
+}
+
+.collections {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+    margin: 0px 120px;
+    
+}
+
+.collection {
+
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    height: 476px;
+    width: 329px;
+}
+
+
+.collection img {
+    width: 100%;
+}
+
 /* Small Device */
-@media screen and (max-width: 576px){
-    body{
+@media screen and (max-width: 576px) {
+    body {
         width: 100%;
     }
+
     .banner-container{
         flex-direction: column-reverse;
         text-align: center;
     }
+    .collections{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0px;
+
+    }
 }
 
 /* Medium Device */
-@media screen and (min-width: 577px) and (max-width: 768px){
-    body{
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    body {
         width: 100%;
+    }
+    .collections{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0px;
     }
 }
