@@ -93,6 +93,17 @@ body {
 .collection img {
     width: 100%;
 }
+/* Featured Style */
+.featured{
+    display: flex;
+    justify-content: space-around;
+    margin:120px 120px;
+    align-items: center;
+    gap: 50px;
+}
+
+
+
 
 /* Small Device */
 @media screen and (max-width: 576px) {
@@ -102,6 +113,10 @@ body {
 
     .banner-container{
         flex-direction: column-reverse;
+        text-align: center;
+    }
+    .featured{
+        flex-direction: column;
         text-align: center;
     }
     .collections{
